@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Parallax</title>
+    <script type='text/javascript' src="vendor/jquery.js"></script>
+    <script type='text/javascript'>
+      $(document).ready(function(){
+        $('.plx').css('border', '1px solid gray')
+          .css('width', '100px')
+            .mouseover(function(){
+              $('div.plx').text("fah");
+            })
+            .mouseout(function(){
+              $('div.plx').text("foo");
+            });
+      })
+    </script>
+  </head>
+  <body>
+    <div class="plx">
+      foo
+    </div>
+  </body>
+</html>
